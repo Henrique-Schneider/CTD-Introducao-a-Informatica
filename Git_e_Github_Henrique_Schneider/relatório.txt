@@ -1,0 +1,21 @@
+Corrigindo comflito com a pasta de repositorio local e remote
+o conflico aconteceu após a clonagem do repositorio online Turma1-2022, para dentro do repositorio local.
+gerando um conflito de subpastas.
+
+resolvendo o problema
+com a ajuda do professor Alessandro Santos, removemos os arquivos principais para uma nova pasta, fora do repositorio local.
+usamos o comando, $mv e depois removemos o repositorio Turma1-2022 com o gomando $git rm -f Turma1-2022/
+renomeamos a pasta criada para Aula6 e adcionamos os arquivos que haviam sido removidos. Adcionamos esses arquivos ao repositorio com o comando $git add . tambem verificamos que o problema poderia estar na branch, entao usando o comando $git checkout -b nome_da_branch, criamos uma nova branch. tentamos realizar um merge com o comando $git merge nome_da_branch.
+verificamos se a url estava correta, usamos o comando $git remote get-url origin
+e trocamos a url com o comando $git remote set-url origin
+finalmente realizamos o comando pull $git pull
+mais o erro ainda estava lá! usamos o comando $git merge main e vimos que parecia estar certo, mais o camando push $git push
+nao conseguia subir os arquivos para o repositorio online. foi onde realizamos o comando $git rebase origin/main
+onde mostrou que alguma coisa tinha sido corrigida na base de dados .git/
+usamos o comando $git reset --hard e depos resolvemos apagar a branch antiga
+comando $git branch -D (nome da branch)
+e demos mais um comando $git rebase origin/main
+depos desse ponto o pull e o push passaram a funcionar e os arquivos foram acrescentados no repositorio onlene.
+
+Muito Obrigado, Professor Alessandro.
+Problema RESOLVIDO!!
