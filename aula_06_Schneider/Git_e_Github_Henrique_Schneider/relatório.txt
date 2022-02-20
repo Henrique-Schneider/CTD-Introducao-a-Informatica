@@ -20,4 +20,4 @@ depos desse ponto o pull e o push passaram a funcionar e os arquivos foram acres
 Muito Obrigado, Professor Alessandro.
 Problema RESOLVIDO!!
 
-recomeçando do zero!!
+No inicio da manhã achei melhor recomeçar! com isso aprendi que nao posso clonar o repositorio para uma pasta que ja possue um repositorio dentro... e percebi que a organização das pastas, vao ser importantes para projetos futuros...problema resolvido!
